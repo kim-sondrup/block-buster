@@ -24,6 +24,6 @@ spec:
       name: 5-demo
     replicaCount: 2
     service:
-      port: 30005
+      nodePort: 30005
       type: NodePort
 

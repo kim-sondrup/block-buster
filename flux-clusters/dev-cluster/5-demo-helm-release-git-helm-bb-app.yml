@@ -7,7 +7,7 @@ metadata:
 spec:
   chart:
     spec:
-      chart: helm-cart
+      chart: helm-chart
       reconcileStrategy: ChartVersion
       sourceRef:
         kind: GitRepository

@@ -16,7 +16,7 @@ spec:
       port: 9097
       protocol: TCP
       targetPort: 9097
-      nodePort: 39097
+      nodePort: 30997
   type: NodePort
   selector:
     app.kubernetes.io/component: dashboard

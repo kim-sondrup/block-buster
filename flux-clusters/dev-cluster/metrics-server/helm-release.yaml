@@ -12,6 +12,7 @@ spec:
       sourceRef:
         kind: HelmRepository
         name: metric-server
+        namespace: flux-system
   interval: 1m0s
   targetNamespace: kube-system
 

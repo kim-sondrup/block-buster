@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/name: dashboard
     app.kubernetes.io/part-of: tekton-dashboard
     version: v0.39.0
-  name: tekton-dashboard
+  name: tekton-dashboard-nodeport
   namespace: tekton-pipelines
 spec:
   ports:

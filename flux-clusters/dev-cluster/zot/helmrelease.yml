@@ -26,8 +26,30 @@ spec:
               "/dedup":{
                 "rootDirectory": "/tmp/dedup",
                 "dedupe": true,
-                "gc": true
+                "gc": true,
+                "storageDriver": {
+                  "name": "s3",
+                  "rootdirectory": "/dedup",
+                  "region": "us-east-2",
+                  "bucket": "zot-storage",
+                  "accesskey": "minioadmin",
+                  "secretkey": "minioadmin",
+                  "regionendpoint": "http://minio.minio-dev.svc.cluster.local:9000",
+                  "secure": false,
+                  "skipverify": false
+                },
               }
+            },
+            "storageDriver": {
+              "name": "s3",
+              "rootdirectory": "/zot",
+              "region": "us-east-2",
+              "bucket": "zot-storage",
+              "accesskey": "minioadmin",
+              "secretkey": "minioadmin",
+              "regionendpoint": "http://minio.minio-dev.svc.cluster.local:9000",
+              "secure": false,
+              "skipverify": false
             },
             "rootDirectory": "/tmp/zot",
             "gc": true

@@ -27,6 +27,7 @@ spec:
                 "rootDirectory": "/tmp/dedup",
                 "dedupe": true,
                 "gc": true,
+                "remoteCache": false,
                 "storageDriver": {
                   "name": "s3",
                   "rootdirectory": "/dedup",
@@ -51,6 +52,7 @@ spec:
               "secure": false,
               "skipverify": false
             },
+            "remoteCache": false,
             "rootDirectory": "/tmp/zot",
             "gc": true
           },

@@ -42,6 +42,9 @@ spec:
                  "policies": [{
                    "users": ["user"],
                    "actions": ["read"]
+                 }, {
+                   "users": ["admin"],
+                   "actions": ["create", "read", "update", "delete"]
                  }],
                  "anonymousPolicy": ["read"],
                  "defaultPolicy": ["read"]

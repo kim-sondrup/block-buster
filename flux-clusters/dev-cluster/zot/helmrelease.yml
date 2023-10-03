@@ -43,6 +43,7 @@ spec:
                    "users": ["user"],
                    "actions": ["read"]
                  }],
+                 "anonymousPolicy": ["read"],
                  "defaultPolicy": ["read"]
                }
              },

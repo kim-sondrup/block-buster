@@ -37,7 +37,7 @@ spec:
                   "regionendpoint": "http://minio.minio-dev.svc.cluster.local:9000",
                   "secure": false,
                   "skipverify": false
-                },
+                }
               }
             },
             "storageDriver": {

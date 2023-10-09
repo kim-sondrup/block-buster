@@ -23,14 +23,13 @@ spec:
         {
           "storage": {
             "subPaths":{
-              "/dedup":{
-                "rootDirectory": "/tmp/dedup",
-                "dedupe": true,
+              "/secure":{
+                "rootDirectory": "/tmp/secure",
                 "gc": true,
                 "remoteCache": false,
                 "storageDriver": {
                   "name": "s3",
-                  "rootdirectory": "/dedup",
+                  "rootdirectory": "/secure",
                   "region": "us-east-2",
                   "bucket": "zot-storage",
                   "accesskey": "minioadmin",

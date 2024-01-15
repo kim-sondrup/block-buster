@@ -13,6 +13,16 @@ spec:
         kind: HelmRepository
         name: open-telemetry
       version: 0.27.0
+  valuesFrom:
+  - kind: ConfigMap
+    name: otel-demo-frontend
+    valuesKey: values.yaml
+    targetPath: frontend
+  - kind: ConfigMap
+    name: otel-demo-frontendProxy
+    valuesKey: values.yaml
+    targetPath: frontendProxy
+    optional: true
   install:
     createNamespace: true
   interval: 1m0s

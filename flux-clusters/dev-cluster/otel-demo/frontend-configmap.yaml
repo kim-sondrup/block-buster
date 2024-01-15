@@ -1,9 +1,11 @@
 apiVersion: v1
 data:
   values.yaml: |
-    resources:
-      limits:
-        memory: 210Mi
+    components:
+      frontend:
+        resources:
+          limits:
+            memory: 210Mi
 kind: ConfigMap
 metadata:
   name: otel-demo-frontend

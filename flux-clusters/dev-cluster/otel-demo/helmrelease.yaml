@@ -19,9 +19,8 @@ spec:
     valuesKey: values.yaml
     targetPath: components.frontend
   - kind: ConfigMap
-    name: otel-demo-frontendProxy
+    name: otel-demo-extra
     valuesKey: values.yaml
-    targetPath: components.frontendProxy
     optional: true
   install:
     createNamespace: true

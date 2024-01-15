@@ -1,0 +1,12 @@
+apiVersion: v1
+data:
+  values.yaml: |
+    components:
+      frontendProxy:
+        resources:
+          limits:
+            memory: 210Mi
+kind: ConfigMap
+metadata:
+  name: otel-demo-extra
+  namespace: flux-system
